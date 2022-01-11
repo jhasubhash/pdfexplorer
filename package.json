@@ -4,6 +4,7 @@
   "description": "Pdf structure analysis tool",
   "main": "build/index.js",
   "scripts": {
+    "build": "babel ./src -d ./lib",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [
@@ -16,5 +17,9 @@
   "homepage": "https://github.com/jhasubhash/pdfexplorer#readme",
   "author": "Subhash Jha",
   "license": "MIT",
-  "private": false
+  "private": false,
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-preset-env": "^1.7.0"
+  }
 }
