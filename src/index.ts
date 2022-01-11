@@ -1,3 +1,6 @@
-function abc(name:string) {
-    return `Hi, ${name}`;
+
+function pdfParser(pdfDoc:any) {
+    return pdfDoc;
 }
+
+export default pdfParser;
