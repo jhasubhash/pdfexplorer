@@ -6,7 +6,7 @@
   "scripts": {
     "build": "babel --extensions '.ts' ./src -d ./lib",
     "lint": "eslint ./src",
-    "test": "ts-mocha 'test/**/*.ts'"
+    "test": "nyc ts-mocha 'test/**/*.ts'"
   },
   "keywords": [
     "npm",
@@ -19,6 +19,12 @@
   "author": "Subhash Jha",
   "license": "MIT",
   "private": false,
+  "nyc": {
+    "reporter": [
+      "lcov",
+      "text"
+    ]
+  },
   "devDependencies": {
     "@babel/cli": "^7.16.8",
     "@babel/core": "^7.16.7",
@@ -33,8 +39,11 @@
     "eslint-config-google": "^0.14.0",
     "eslint-plugin-react": "^7.28.0",
     "mocha": "^9.1.3",
+    "nyc": "^15.1.0",
     "ts-mocha": "^8.0.0",
     "typescript": "^4.5.4"
   },
-  "dependencies": {}
+  "dependencies": {
+    "http-server": "^14.1.0"
+  }
 }
