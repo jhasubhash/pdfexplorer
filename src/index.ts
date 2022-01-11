@@ -1,5 +1,5 @@
 
-function pdfParser(pdfDoc:any) {
+function pdfParser(pdfDoc: any) {
     return pdfDoc;
 }
 

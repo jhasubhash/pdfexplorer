@@ -6,7 +6,8 @@
   "scripts": {
     "build": "babel --extensions '.ts' ./src -d ./lib",
     "lint": "eslint ./src",
-    "test": "nyc ts-mocha 'test/**/*.ts'"
+    "test": "nyc ts-mocha 'test/**/*.ts'",
+    "prepublishOnly": "yarn build"
   },
   "keywords": [
     "npm",
