@@ -1,0 +1,11 @@
+{
+  "compilerOptions": {
+    "target": "esnext",
+    "module": "commonjs",
+    "declaration": true,
+    "outDir": "./lib"
+  },
+  "include": [
+    "src" // <-- change this to where your source files are
+  ]
+}
